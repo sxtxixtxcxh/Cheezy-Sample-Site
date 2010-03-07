@@ -29,5 +29,6 @@
     </div>
     <?php endif; ?>
   </div>
+  <?php render_partial('google_analytics'); ?>
 </body>
 </html>

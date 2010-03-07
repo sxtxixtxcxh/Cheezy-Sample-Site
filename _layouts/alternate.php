@@ -14,7 +14,7 @@
     <div id="sidebar">
       <?php render_partial('menu'); ?>
     </div>
-    
+    <?php render_partial('google_analytics'); ?>
   </body>
 </html>
 
