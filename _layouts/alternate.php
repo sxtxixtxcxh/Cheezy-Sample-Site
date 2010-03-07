@@ -4,8 +4,17 @@
     <title>Page Title</title>
   </head>
   <body>
-    <h1>WOW that's cheezy</h1>
-    <?php echo $content_for_layout;?>
+    <div id="header">
+      <?php render_partial('header'); ?>
+    </div>
+    <div id="content">
+      <h1>WOW that's cheezy</h1>
+      <?php echo $content_for_layout;?>
+    </div>
+    <div id="sidebar">
+      <?php render_partial('menu'); ?>
+    </div>
+    
   </body>
 </html>
 

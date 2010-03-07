@@ -4,19 +4,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<title>Example<?php if(isset($title)) echo ' - '. $title;?></title>
+	<title>A Cheezy Example<?php if(isset($title)) echo ' - '. $title;?></title>
+  <link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
 
 <body>
-<?php render_partial('header'); ?>
-
-<?php echo $content_for_layout; ?>
-
-<?php if (Timer::$started): ?>
-<div id="timer">
-  <?php echo Timer::end(5);?>
-  <?php echo " - " .round(memory_get_usage(true) / (1024*1024),3)." MB";?>
-</div>
-<?php endif; ?>
+  <div id="container">
+    <div id="header">
+      <?php render_partial('header'); ?>
+    </div>
+    <div id="content">
+      <?php echo $content_for_layout; ?>
+    </div>
+    <div id="sidebar">
+      <?php render_partial('menu'); ?>
+    </div>
+    <?php if (Timer::$started): ?>
+    <div id="footer">
+      A Prototype App &copy; 2010 
+      <div id="timer">
+        <?php echo Timer::end(5);?>
+        <?php echo " - " .round(memory_get_usage(true) / (1024*1024),3)." MB";?>
+      </div>
+    </div>
+    <?php endif; ?>
+  </div>
 </body>
 </html>
