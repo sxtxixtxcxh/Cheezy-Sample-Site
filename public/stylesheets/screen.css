@@ -142,3 +142,5 @@ body #sidebar { display: inline; float: left; margin-right: 10px; width: 310px; 
 * html body #sidebar { overflow-x: hidden; }
 body #content { display: inline; float: left; margin-right: 0; width: 630px; }
 * html body #content { overflow-x: hidden; }
+
+ol { margin-left: 2.5em; }
