@@ -1,2 +1,2 @@
 <?php $this->layout = 'alternate'; ?>
-<h1>new page</h1>
+<h1>WOW that's cheezy</h1>
