@@ -3,7 +3,7 @@ html, body { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style:
 div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, code, del, dfn, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
 
 blockquote, q { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; quotes: "" ""; }
-blockquote:before, q:before, blockquote:after, q:after { content: ""; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
 
 th, td, caption { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; text-align: left; font-weight: normal; vertical-align: middle; }
 
@@ -38,7 +38,7 @@ a:focus { color: black; }
 a:hover { color: black; }
 a:active { color: #cc0099; }
 
-blockquote { margin: 1.5em; color: #666; font-style: italic; }
+blockquote { margin: 1.5em; color: #666666; font-style: italic; }
 
 strong { font-weight: bold; }
 
@@ -48,11 +48,11 @@ dfn { font-style: italic; font-weight: bold; }
 
 sup, sub { line-height: 0; }
 
-abbr, acronym { border-bottom: 1px dotted #666; }
+abbr, acronym { border-bottom: 1px dotted #666666; }
 
 address { margin: 0 0 1.5em; font-style: italic; }
 
-del { color: #666; }
+del { color: #666666; }
 
 pre { margin: 1.5em 0; white-space: pre; }
 
@@ -81,39 +81,38 @@ tr.even td { background: #e5ecf9; }
 
 tfoot { font-style: italic; }
 
-caption { background: #eee; }
+caption { background: #eeeeee; }
 
 .quiet { color: #666666; }
 
 .loud { color: #111111; }
 
-
-.box { padding: 1.5em; margin-bottom: 1.5em; background: #E5ECF9; }
+.box { padding: 1.5em; margin-bottom: 1.5em; background: #e5ecf9; }
 
 div.border { padding-right: 4px; margin-right: 5px; border-right: 1px solid #eeeeee; }
 
 div.colborder { padding-right: 24px; margin-right: 25px; border-right: 1px solid #eeeeee; }
 
-hr { background: #dddddd; color: #dddddd; clear: both; float: none; width: 100%; height: .1em; margin: 0 0 1.45em; border: none; }
+hr { background: #dddddd; color: #dddddd; clear: both; float: none; width: 100%; height: 0.1em; margin: 0 0 1.45em; border: none; }
 
-hr.space { background: #dddddd; color: #dddddd; clear: both; float: none; width: 100%; height: .1em; margin: 0 0 1.45em; border: none; background: #fff; color: #fff; }
+hr.space { background: #dddddd; color: #dddddd; clear: both; float: none; width: 100%; height: 0.1em; margin: 0 0 1.45em; border: none; background: white; color: white; }
 
 body .clear { clear: both; }
 body .nowrap { white-space: nowrap; }
 body .clearfix { overflow: hidden; display: inline-block; }
 body .clearfix { display: block; }
-body .small { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
+body .small { font-size: 0.8em; margin-bottom: 1.875em; line-height: 1.875em; }
 body .large { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
 body .first { margin-left: 0; padding-left: 0; }
 body .last { margin-right: 0; padding-right: 0; }
 body .top { margin-top: 0; padding-top: 0; }
 body .bottom { margin-bottom: 0; padding-bottom: 0; }
 body .showgrid { background: url('/public/images/grid.png?1267948742'); }
-body .error { padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
+body .error { padding: 0.8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
 body .error a { color: #8a1f11; }
-body .notice { padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fff6bf; color: #514721; border-color: #ffd324; }
+body .notice { padding: 0.8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fff6bf; color: #514721; border-color: #ffd324; }
 body .notice a { color: #514721; }
-body .success { padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #e6efc2; color: #264409; border-color: #c6d880; }
+body .success { padding: 0.8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #e6efc2; color: #264409; border-color: #c6d880; }
 body .success a { color: #264409; }
 body .hide { display: none; }
 body .highlight { background: yellow; }
@@ -123,7 +122,7 @@ body .removed { background: #990000; color: white; }
 form.bp label { font-weight: bold; }
 form.bp fieldset { padding: 1.4em; margin: 0 0 1.5em 0; }
 form.bp legend { font-weight: bold; font-size: 1.2em; }
-form.bp input.text, form.bp input.title, form.bp input[type=text] { margin: 0.5em 0; background-color: #fff; padding: 5px; }
+form.bp input.text, form.bp input.title, form.bp input[type=text] { margin: 0.5em 0; background-color: white; padding: 5px; }
 form.bp input.title { font-size: 1.5em; }
 form.bp input[type=checkbox], form.bp input.checkbox, form.bp input[type=radio], form.bp input.radio { position: relative; top: 0.25em; }
 form.bp textarea { margin: 0.5em 0; padding: 5px; }
@@ -138,9 +137,9 @@ body #container { width: 950px; margin: 0 auto; overflow: hidden; display: inlin
 body #container { display: block; }
 body #header, body #footer { display: inline; float: left; margin-right: 10px; width: 950px; }
 * html body #header, * html body #footer { overflow-x: hidden; }
-body #sidebar { display: inline; float: left; margin-right: 10px; width: 310px; }
+body #sidebar { display: inline; float: left; margin-right: 10px; width: 230px; }
 * html body #sidebar { overflow-x: hidden; }
-body #content { display: inline; float: left; margin-right: 0; width: 630px; }
+body #content { display: inline; float: left; margin-right: 0; width: 710px; }
 * html body #content { overflow-x: hidden; }
 
 ol { margin-left: 2.5em; }
