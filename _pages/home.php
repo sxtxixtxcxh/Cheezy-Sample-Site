@@ -9,7 +9,7 @@
   <dt>What does this require?</dt>
   <dd>Not much: PHP 5, Apache. If you need a web host, I currently use DreamHost. Sign up <a href="http://www.dreamhost.com/r.cgi?146412">using this link</a> and they'll credit me for the referral.</dd>
   <dt>Who's using it?</dt>
-  <dd>This site, for one. And my friend <a href="http://davidhoang.com">David Hoang</a>. <a href="/contact">Let me know</a>, if you're using it!</dd>
+  <dd>This site, for one. And my friend <a href="http://davidhoang.com">David Hoang</a>. KanyeWest.com ran on it. I use it for a rapid templating. <a href="/contact">Let me know</a>, if you're using it!</dd>
   <dt>Where can I download this?</dt>
   <dd>You can download the source of this sample site and the framework from <a href="http://github.com/sxtxixtxcxh/Cheezy-Sample-Site">github</a>.</dd>
 </dl>
